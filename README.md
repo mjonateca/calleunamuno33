@@ -9,7 +9,7 @@ HTML, CSS y JavaScript sin dependencias de compilación. La configuración exist
 
 ## Fotografías
 
-29 fotografías seleccionadas, descritas en `photos.json`. 22 proceden del ZIP facilitado por el propietario. Se conservan siete fotos de archivo de la web anterior para espacios no cubiertos por las nuevas tomas. Estas fotos de archivo tienen 600 × 450 píxeles; no se han ampliado artificialmente ni se han eliminado sus marcas de agua.
+22 fotografías seleccionadas del ZIP facilitado por el propietario, descritas en `photos.json`. Se han retirado las siete fotografías de archivo que ocupaban los puestos 23 a 29, junto con sus variantes y las copias de archivo asociadas. La galería pública utiliza exclusivamente las fotos originales seleccionadas del propietario.
 
 `images/v2/` contiene WebP a 480, 900 y hasta 1.800 píxeles, según la resolución original. `srcset`, dimensiones explícitas y carga diferida en imágenes secundarias. Se ha conservado el contenido y color de los originales, sin recrear arquitectura, mobiliario ni jardines. Las fotografías no seleccionadas por duplicidad, desenfoque o escaso valor descriptivo se conservan en el ZIP original del propietario.
 
@@ -25,7 +25,7 @@ Los datos físicos de la vivienda proceden de la ficha de la web anterior. La do
 
 ## Verificación
 
-`python checks.py` valida ambas páginas: ausencia de importes, referencias al tour retirado y formularios ficticios; un H1 por página, IDs únicos, destinos de anclas, 29 fotos y existencia de imágenes y recursos. Comprueba también la sintaxis de los scripts inline con Node. `node --check gallery.js` revisa el script compartido.
+`python checks.py` valida ambas páginas: ausencia de importes, referencias al tour retirado y formularios ficticios; un H1 por página, IDs únicos, destinos de anclas, 22 fotos y existencia de imágenes y recursos. Comprueba también la sintaxis de los scripts inline con Node. `node --check gallery.js` revisa el script compartido.
 
 Previsualización: `python -m http.server 8765 --bind 127.0.0.1`. Abrir `/` y `/v2/`. Comprobar escritorio, móvil, filtros, ampliación, navegación y contacto antes de publicar.
 
