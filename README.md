@@ -3,7 +3,7 @@
 Dos versiones de la web de la vivienda de Calle Unamuno 33, Peñasolana, Carrascal de Barregas, Salamanca. Ambas sin precio, valoraciones ni referencias económicas en su contenido o metadatos.
 
 - `/`: versión editorial original actualizada, con portada panorámica, paleta pergamino/bronce y Fraunces/Inter.
-- `/calma`: nueva versión cálida, con composición asimétrica, fotografía en arco, blanco cálido, terracota y verde oliva. Tipografía Cormorant Garamond/DM Sans.
+- `/v2`: nueva versión cálida, con composición asimétrica, fotografía en arco, blanco cálido, terracota y verde oliva. Tipografía Cormorant Garamond/DM Sans.
 
 HTML, CSS y JavaScript sin dependencias de compilación. La configuración existente de Vercel sirve los archivos estáticos. Repositorio: `mjonateca/calleunamuno33`, proyecto Vercel: `calleunamuno33`.
 
@@ -27,4 +27,6 @@ Los datos físicos de la vivienda proceden de la ficha de la web anterior. La do
 
 `python checks.py` valida ambas páginas: ausencia de importes, referencias al tour retirado y formularios ficticios; un H1 por página, IDs únicos, destinos de anclas, 29 fotos y existencia de imágenes y recursos. Comprueba también la sintaxis de los scripts inline con Node. `node --check gallery.js` revisa el script compartido.
 
-Previsualización: `python -m http.server 8765 --bind 127.0.0.1`. Abrir `/` y `/calma/`. Comprobar escritorio, móvil, filtros, ampliación, navegación y contacto antes de publicar.
+Previsualización: `python -m http.server 8765 --bind 127.0.0.1`. Abrir `/` y `/v2/`. Comprobar escritorio, móvil, filtros, ampliación, navegación y contacto antes de publicar.
+
+Un selector fijo en la parte superior permite alternar entre V1 (original mejorada) y V2 (Calma), también en móvil. La dirección anterior `/calma` redirige a `/v2`.

@@ -19,7 +19,7 @@ class Page(HTMLParser):
                 if pair.strip():self.assets.append(pair.strip().split(' ')[0])
         if t=='a' and 'data-category' in d:self.photos+=1
 results=[]
-for file in ['index.html','calma/index.html']:
+for file in ['index.html','v2/index.html']:
     s=(root/file).read_text(encoding='utf-8');p=Page();p.feed(s)
     assert not re.search(r'750[.,]?000|€|1\.332|425\.000|640\.000|ZKW4kUeZWbb|Solicitud Enviada|\{\{',s),f'Forbidden old content: {file}'
     assert p.h1==1,f'H1 count {file}: {p.h1}'
