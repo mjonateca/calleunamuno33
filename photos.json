@@ -1,0 +1,372 @@
+[
+  {
+    "id": "jardin-casa",
+    "alt": "La casa entre los árboles del jardín",
+    "category": "exterior",
+    "width": 2000,
+    "height": 1126,
+    "sizes": [
+      480,
+      900,
+      1800
+    ],
+    "src": "/images/v2/jardin-casa-1800.webp"
+  },
+  {
+    "id": "fachada",
+    "alt": "Fachada de la vivienda desde el jardín",
+    "category": "exterior",
+    "width": 2000,
+    "height": 1126,
+    "sizes": [
+      480,
+      900,
+      1800
+    ],
+    "src": "/images/v2/fachada-1800.webp"
+  },
+  {
+    "id": "jardin-sauce",
+    "alt": "Un rincón de sombra bajo el sauce",
+    "category": "exterior",
+    "width": 2000,
+    "height": 1126,
+    "sizes": [
+      480,
+      900,
+      1800
+    ],
+    "src": "/images/v2/jardin-sauce-1800.webp"
+  },
+  {
+    "id": "piscina",
+    "alt": "Piscina privada y jardín",
+    "category": "exterior",
+    "width": 2000,
+    "height": 1126,
+    "sizes": [
+      480,
+      900,
+      1800
+    ],
+    "src": "/images/v2/piscina-1800.webp"
+  },
+  {
+    "id": "piscina-estar",
+    "alt": "Zona de estar junto a la piscina",
+    "category": "exterior",
+    "width": 2000,
+    "height": 1126,
+    "sizes": [
+      480,
+      900,
+      1800
+    ],
+    "src": "/images/v2/piscina-estar-1800.webp"
+  },
+  {
+    "id": "terraza-piscina",
+    "alt": "Tarima y zona de descanso exterior",
+    "category": "exterior",
+    "width": 2000,
+    "height": 1126,
+    "sizes": [
+      480,
+      900,
+      1800
+    ],
+    "src": "/images/v2/terraza-piscina-1800.webp"
+  },
+  {
+    "id": "sendero-casa",
+    "alt": "Sendero de acceso a la vivienda",
+    "category": "exterior",
+    "width": 2000,
+    "height": 1126,
+    "sizes": [
+      480,
+      900,
+      1800
+    ],
+    "src": "/images/v2/sendero-casa-1800.webp"
+  },
+  {
+    "id": "jardin-sombra",
+    "alt": "Mesa y sillas bajo la sombrilla del jardín",
+    "category": "exterior",
+    "width": 2000,
+    "height": 1126,
+    "sizes": [
+      480,
+      900,
+      1800
+    ],
+    "src": "/images/v2/jardin-sombra-1800.webp"
+  },
+  {
+    "id": "jardin-descanso",
+    "alt": "La pradera y sus rincones de descanso",
+    "category": "exterior",
+    "width": 2000,
+    "height": 1126,
+    "sizes": [
+      480,
+      900,
+      1800
+    ],
+    "src": "/images/v2/jardin-descanso-1800.webp"
+  },
+  {
+    "id": "camino-rosales",
+    "alt": "Camino de entrada entre rosales",
+    "category": "exterior",
+    "width": 1200,
+    "height": 1600,
+    "sizes": [
+      480,
+      900,
+      1200
+    ],
+    "src": "/images/v2/camino-rosales-1200.webp"
+  },
+  {
+    "id": "casa-parcela",
+    "alt": "Vista abierta de la casa y la parcela",
+    "category": "exterior",
+    "width": 1600,
+    "height": 1200,
+    "sizes": [
+      480,
+      900,
+      1600
+    ],
+    "src": "/images/v2/casa-parcela-1600.webp"
+  },
+  {
+    "id": "comedor-tarde",
+    "alt": "El comedor abierto a la terraza al caer la tarde",
+    "category": "interior",
+    "width": 1600,
+    "height": 1200,
+    "sizes": [
+      480,
+      900,
+      1600
+    ],
+    "src": "/images/v2/comedor-tarde-1600.webp"
+  },
+  {
+    "id": "mesa-terraza",
+    "alt": "La mesa de la terraza con vistas al jardín",
+    "category": "exterior",
+    "width": 1600,
+    "height": 1200,
+    "sizes": [
+      480,
+      900,
+      1600
+    ],
+    "src": "/images/v2/mesa-terraza-1600.webp"
+  },
+  {
+    "id": "porche-noche",
+    "alt": "El porche al anochecer",
+    "category": "exterior",
+    "width": 1200,
+    "height": 1600,
+    "sizes": [
+      480,
+      900,
+      1200
+    ],
+    "src": "/images/v2/porche-noche-1200.webp"
+  },
+  {
+    "id": "porche",
+    "alt": "Porche cubierto y mesa exterior",
+    "category": "exterior",
+    "width": 1600,
+    "height": 1200,
+    "sizes": [
+      480,
+      900,
+      1600
+    ],
+    "src": "/images/v2/porche-1600.webp"
+  },
+  {
+    "id": "salon-chimenea",
+    "alt": "Salón principal con chimenea",
+    "category": "interior",
+    "width": 1200,
+    "height": 1600,
+    "sizes": [
+      480,
+      900,
+      1200
+    ],
+    "src": "/images/v2/salon-chimenea-1200.webp"
+  },
+  {
+    "id": "salon-altura",
+    "alt": "El salón principal visto desde la galería superior",
+    "category": "interior",
+    "width": 1200,
+    "height": 1600,
+    "sizes": [
+      480,
+      900,
+      1200
+    ],
+    "src": "/images/v2/salon-altura-1200.webp"
+  },
+  {
+    "id": "salon-galeria",
+    "alt": "Zona de estar y comedor del salón",
+    "category": "interior",
+    "width": 1200,
+    "height": 1600,
+    "sizes": [
+      480,
+      900,
+      1200
+    ],
+    "src": "/images/v2/salon-galeria-1200.webp"
+  },
+  {
+    "id": "bano",
+    "alt": "Baño con ducha de la vivienda",
+    "category": "interior",
+    "width": 1200,
+    "height": 1600,
+    "sizes": [
+      480,
+      900,
+      1200
+    ],
+    "src": "/images/v2/bano-1200.webp"
+  },
+  {
+    "id": "dormitorio",
+    "alt": "Dormitorio con armarios de madera",
+    "category": "interior",
+    "width": 1200,
+    "height": 1600,
+    "sizes": [
+      480,
+      900,
+      1200
+    ],
+    "src": "/images/v2/dormitorio-1200.webp"
+  },
+  {
+    "id": "jardin-atardecer",
+    "alt": "Última luz sobre el jardín y la piscina",
+    "category": "exterior",
+    "width": 1600,
+    "height": 1200,
+    "sizes": [
+      480,
+      900,
+      1600
+    ],
+    "src": "/images/v2/jardin-atardecer-1600.webp"
+  },
+  {
+    "id": "piscina-luz",
+    "alt": "Piscina y pradera a la luz del día",
+    "category": "exterior",
+    "width": 1200,
+    "height": 1600,
+    "sizes": [
+      480,
+      900,
+      1200
+    ],
+    "src": "/images/v2/piscina-luz-1200.webp"
+  },
+  {
+    "id": "acceso",
+    "alt": "Escalera exterior de acceso a la vivienda",
+    "category": "exterior",
+    "width": 600,
+    "height": 450,
+    "sizes": [
+      480,
+      600
+    ],
+    "src": "/images/v2/acceso-600.webp"
+  },
+  {
+    "id": "invitados-salon",
+    "alt": "Salón abuhardillado de la casa de invitados",
+    "category": "invitados",
+    "width": 600,
+    "height": 450,
+    "sizes": [
+      480,
+      600
+    ],
+    "src": "/images/v2/invitados-salon-600.webp"
+  },
+  {
+    "id": "invitados-cocina",
+    "alt": "Zona de estar y cocina de la casa de invitados",
+    "category": "invitados",
+    "width": 600,
+    "height": 450,
+    "sizes": [
+      480,
+      600
+    ],
+    "src": "/images/v2/invitados-cocina-600.webp"
+  },
+  {
+    "id": "invitados-dormitorio",
+    "alt": "Dormitorio abuhardillado de la casa de invitados",
+    "category": "invitados",
+    "width": 600,
+    "height": 450,
+    "sizes": [
+      480,
+      600
+    ],
+    "src": "/images/v2/invitados-dormitorio-600.webp"
+  },
+  {
+    "id": "suite",
+    "alt": "Dormitorio principal",
+    "category": "interior",
+    "width": 600,
+    "height": 450,
+    "sizes": [
+      480,
+      600
+    ],
+    "src": "/images/v2/suite-600.webp"
+  },
+  {
+    "id": "bano-escalera",
+    "alt": "Baño con cabina de ducha y escalera de caracol",
+    "category": "interior",
+    "width": 600,
+    "height": 450,
+    "sizes": [
+      480,
+      600
+    ],
+    "src": "/images/v2/bano-escalera-600.webp"
+  },
+  {
+    "id": "recibidor",
+    "alt": "Recibidor y pasillo de la vivienda",
+    "category": "interior",
+    "width": 600,
+    "height": 450,
+    "sizes": [
+      480,
+      600
+    ],
+    "src": "/images/v2/recibidor-600.webp"
+  }
+]

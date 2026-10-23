@@ -1,58 +1,30 @@
 # Finca Unamuno 33
 
-> Landing page para la propiedad situada en Calle Unamuno 33, Peñasolana, Carrascal de Barregas, Salamanca.
+Dos versiones de la web de la vivienda de Calle Unamuno 33, Peñasolana, Carrascal de Barregas, Salamanca. Ambas sin precio, valoraciones ni referencias económicas en su contenido o metadatos.
 
-Una residencia familiar de 563 m² sobre parcela de 2.130 m² en el corazón del Campo Charro, a diez minutos del casco histórico de Salamanca (Patrimonio de la Humanidad UNESCO).
+- `/`: versión editorial original actualizada, con portada panorámica, paleta pergamino/bronce y Fraunces/Inter.
+- `/calma`: nueva versión cálida, con composición asimétrica, fotografía en arco, blanco cálido, terracota y verde oliva. Tipografía Cormorant Garamond/DM Sans.
 
-## Stack
+HTML, CSS y JavaScript sin dependencias de compilación. La configuración existente de Vercel sirve los archivos estáticos. Repositorio: `mjonateca/calleunamuno33`, proyecto Vercel: `calleunamuno33`.
 
-- HTML / CSS / JS vanilla — sin frameworks ni build step
-- [Leaflet](https://leafletjs.com/) (CDN) para el mapa interactivo
-- Google Fonts: `Fraunces` (variable serif editorial) + `Inter`
-- Imágenes en `/images/` servidas como assets estáticos
+## Fotografías
 
-## Arquitectura visual
+29 fotografías seleccionadas, descritas en `photos.json`. 22 proceden del ZIP facilitado por el propietario. Se conservan siete fotos de archivo de la web anterior para espacios no cubiertos por las nuevas tomas. Estas fotos de archivo tienen 600 × 450 píxeles; no se han ampliado artificialmente ni se han eliminado sus marcas de agua.
 
-- **Paleta**: pergamino cálido (`#EFE7D4`), tinta marrón profunda (`#1A1612`), bronce mate (`#8B7548`), oliva (campo charro) y terracota como acentos
-- **Tipografía**: jerarquía editorial estilo revista — Fraunces variable para display + Inter para small-caps/UI
-- **Glassmorphism** real (no flat) en elementos flotantes sobre imágenes: price card del hero, sticky bar inferior, stat cards, captions del feature, lightbox, overlays del mapa, formulario de contacto
-- **Cinema-style hero**: Ken Burns automático + parallax + reveal por líneas
-- **Cursor personalizado** en desktop con modo "Ver" en imágenes clicables
-- **Lightbox** completo con navegación teclado/click
-- **Mapa interactivo Leaflet** con marker animado de la propiedad y landmarks (catedral, AVE, aeropuerto, hospital)
-- **Smooth scroll** nativo con anchors animados
-- **Contadores animados** al entrar en viewport
-- **Reveal-on-scroll** con stagger
-- **Plano isométrico SVG** custom de la parcela
-- **Índice lateral derecho** con sección activa marcada
-- **Sticky price bar** glassmorphic que aparece tras la sección de cifras
+`images/v2/` contiene WebP a 480, 900 y hasta 1.800 píxeles, según la resolución original. `srcset`, dimensiones explícitas y carga diferida en imágenes secundarias. Se ha conservado el contenido y color de los originales, sin recrear arquitectura, mobiliario ni jardines. Las fotografías no seleccionadas por duplicidad, desenfoque o escaso valor descriptivo se conservan en el ZIP original del propietario.
 
-## Estructura
+La galería compartida ofrece filtros, ampliación con diálogo nativo, teclado (flechas/Escape), retorno del foco y gesto horizontal en móvil. Sin JavaScript, los enlaces abren las fotografías directamente.
 
-```
-.
-├── index.html              # Página única, ~100 KB
-├── images/                 # 20 fotografías de la propiedad (~900 KB total)
-│   ├── 01-hero-sunset-terrace.jpg
-│   ├── 02-terrace-lantern.jpg
-│   ├── ...
-│   └── 20-hallway.jpg
-├── vercel.json             # Configuración Vercel (cache headers + clean URLs)
-└── README.md
-```
+## Contacto y contenido
 
-## Deploy en Vercel
+Las visitas enlazan con la página oficial de contacto de Premiere Inmobiliaria: https://premiereinmo.com/contacto/. No se almacenan datos personales ni se simula un envío de formulario.
 
-El repo está listo para deploy directo:
+Se ha retirado el enlace Matterport antiguo porque el proveedor devolvía «Model not found (404)». Se ha sustituido por un recorrido fotográfico. Para restaurar un tour se necesita la URL de un modelo activo.
 
-1. Importar en [vercel.com/new](https://vercel.com/new) seleccionando este repositorio
-2. Framework Preset: **Other** (no requiere build)
-3. Root directory: `./`
-4. Vercel sirve `index.html` por defecto y entrega las imágenes desde `/images/`
+Los datos físicos de la vivienda proceden de la ficha de la web anterior. La documentación y superficies deben confirmarse con la agencia. La nueva versión no incorpora estimaciones de mercado, licencias, rendimientos ni garantías.
 
-Tras el deploy, asignar dominio personalizado si se desea (`unamuno33.com`, `finca-unamuno.es`, etc.) desde la configuración del proyecto en Vercel.
+## Verificación
 
-## Crédito
+`python checks.py` valida ambas páginas: ausencia de importes, referencias al tour retirado y formularios ficticios; un H1 por página, IDs únicos, destinos de anclas, 29 fotos y existencia de imágenes y recursos. Comprueba también la sintaxis de los scripts inline con Node. `node --check gallery.js` revisa el script compartido.
 
-Fotografías cortesía de **Premiere Inmobiliaria** (Salamanca).
-Anuncio original en [idealista](https://www.idealista.com/inmueble/108498107/).
+Previsualización: `python -m http.server 8765 --bind 127.0.0.1`. Abrir `/` y `/calma/`. Comprobar escritorio, móvil, filtros, ampliación, navegación y contacto antes de publicar.

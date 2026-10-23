@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
 <title>Finca Unamuno 33 — Una residencia familiar en el Campo Charro, Salamanca</title>
-<meta name="description" content="Residencia familiar de 563 m² sobre parcela de 2.130 m² en el Campo Charro, a diez minutos de Salamanca. 750.000 €.">
+<meta name="description" content="Residencia familiar de 563 m² sobre parcela de 2.130 m² en el Campo Charro, a diez minutos de Salamanca.">
 <meta property="og:title" content="Finca Unamuno 33 — Salamanca">
-<meta property="og:image" content="images/01-hero-sunset-terrace.jpg">
+<meta property="og:image" content="https://calleunamuno33.vercel.app/images/v2/mesa-terraza-1600.webp">
 <meta property="og:type" content="website">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -259,9 +259,7 @@ body::before {
 .index-bar a span { font-family: var(--sans); font-style: normal; font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0; transition: opacity 0.3s; }
 .index-bar a.active span, .index-bar a:hover span { opacity: 1; }
 
-/* ============================================================
-   STICKY PRICE / CTA BAR (bottom on mobile, optional)
-   ============================================================ */
+/* Visit invitation */
 .sticky-bar {
   position: fixed; bottom: 2rem; right: 2rem; z-index: 45;
   display: flex; align-items: center; gap: 1.2rem;
@@ -1055,14 +1053,14 @@ section { position: relative; z-index: 2; }
 }
 
 /* ============================================================
-   PRICE BLOCK (large)
+   VISIT INVITATION (large)
    ============================================================ */
 .price-block {
   padding: 10rem 0; background: var(--paper-soft);
   text-align: center; position: relative; overflow: hidden;
 }
 .price-block::before {
-  content: '€'; position: absolute;
+  content: ''; position: absolute;
   font-family: var(--serif); font-style: italic; font-weight: 200;
   font-size: 40rem; line-height: 1; top: -10rem; right: -8rem;
   color: rgba(139, 117, 72, 0.06);
@@ -1294,7 +1292,22 @@ footer {
   a, button, input, textarea, .clickable { cursor: pointer; }
 }
 </style>
-</head>
+<link rel="canonical" href="https://calleunamuno33.vercel.app/">
+<meta property="og:description" content="Casa en venta con jardín, piscina y casa de invitados en Peñasolana, Salamanca.">
+<link rel="stylesheet" href="/gallery.css">
+<style>
+html{scroll-padding-top:100px} body,a,button,.clickable{cursor:auto!important}.cursor,.cursor-ring{display:none!important}
+.loader{display:none!important}.hero-bg img{width:100%;height:100%;object-fit:cover}.photo-thumb span{font-family:var(--sans)}
+.photo-more{color:var(--ink)}.photo-controls button{color:var(--ink)}.photo-controls button[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+.feature-image img,.feature-duo img,.stats-bg img,.cinematic-bg img{object-fit:cover}
+.contact-form .btn{white-space:normal;text-align:center;max-width:100%}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.reveal,.reveal-stagger{opacity:1!important;transform:none!important}}
+@media(max-width:600px){.nav-mark{font-size:.8rem}.nav{padding:1.1rem}.nav-cta{padding:.7rem;font-size:.6rem}.hero-tagline{font-size:clamp(2rem,7.5vw,3rem)}.sticky-bar{max-width:calc(100vw - 2rem)}.contact-form{padding:1.5rem}}
+.hero-tagline .line>span,.hero-loc,.hero-scroll{opacity:1!important;transform:none!important;animation:none!important}
+.hero-tagline{opacity:1!important}
+.location-grid{grid-template-columns:minmax(0,1fr) minmax(0,1.2fr)}.location-grid>*{min-width:0}.map-wrap{width:100%;aspect-ratio:auto;height:100%;min-height:500px}#map{position:absolute;inset:0}.map-overlay-card{max-width:calc(100% - 3rem)}@media(max-width:900px){.location-grid{grid-template-columns:minmax(0,1fr)}.map-wrap{height:500px}}html{overflow-x:clip}
+@media(max-width:600px){.hero-bottom{display:block}.hero-scroll{display:none}.hero-content{padding:7.5rem 1.5rem 3rem}.hero-tagline{width:100%;font-size:clamp(2rem,8.5vw,3rem)}.hero-loc{flex-wrap:wrap;gap:.6rem;font-size:.5rem;letter-spacing:.15em}.hero-loc span{flex-shrink:0}}
+</style><script src="/gallery.js" defer></script></head>
 <body>
 
 <!-- =================== LOADER =================== -->
@@ -1320,7 +1333,7 @@ footer {
   </div>
   <ul class="nav-links">
     <li><a href="#intro">Residencia</a></li>
-    <li><a href="#tour">Tour</a></li>
+    <li><a href="#tour">Recorrido</a></li>
     <li><a href="#galeria">Galería</a></li>
     <li><a href="#entorno">Entorno</a></li>
     <li><a href="#ficha">Ficha</a></li>
@@ -1338,27 +1351,22 @@ footer {
   <a href="#casa" data-section="casa"><span>La Casa</span></a>
   <a href="#galeria" data-section="galeria"><span>Galería</span></a>
   <a href="#plano" data-section="plano"><span>Plano</span></a>
-  <a href="#tour" data-section="tour"><span>Tour</span></a>
+  <a href="#tour" data-section="tour"><span>Recorrido</span></a>
   <a href="#entorno" data-section="entorno"><span>Entorno</span></a>
   <a href="#ficha" data-section="ficha"><span>Ficha</span></a>
-  <a href="#inversion" data-section="inversion"><span>Inversión</span></a>
+  
   <a href="#proceso" data-section="proceso"><span>Proceso</span></a>
   <a href="#contacto" data-section="contacto"><span>Contacto</span></a>
 </aside>
 
-<!-- =================== STICKY PRICE BAR =================== -->
-<div class="sticky-bar" id="stickyBar">
-  <div class="price">
-    750.000 <em>€</em>
-    <small>Visita Privada</small>
-  </div>
-  <a href="#contacto" class="visit-btn">Agendar</a>
+<!-- =================== STICKY VISIT BAR =================== -->
+<div class="sticky-bar" id="stickyBar"><div class="price">Unamuno 33<small>Visita privada</small></div><a href="#contacto" class="visit-btn">Agendar</a>
 </div>
 
 <!-- =================== HERO =================== -->
 <section class="hero" id="top">
   <div class="hero-bg" id="heroBg">
-    <img src="images/01-hero-sunset-terrace.jpg" fetchpriority="high" alt="Terraza al atardecer con mesa servida y vista al campo charro">
+    <img src="/images/v2/mesa-terraza-1600.webp" srcset="/images/v2/mesa-terraza-480.webp 480w, /images/v2/mesa-terraza-900.webp 900w, /images/v2/mesa-terraza-1600.webp 1600w" sizes="100vw" width="1600" height="1200" alt="La mesa de la terraza con vistas al jardín" fetchpriority="high" decoding="async">
   </div>
   <div class="hero-content">
     <div class="hero-top-row">
@@ -1369,11 +1377,7 @@ footer {
         <span class="dot"></span>
         <span>España</span>
       </div>
-      <div class="price-card">
-        <span class="lbl">Precio</span>
-        <span class="num">750.000<em> €</em></span>
-        <span class="meta">Honorarios incluidos</span>
-      </div>
+      
     </div>
     <div class="hero-bottom">
       <h1 class="hero-tagline">
@@ -1415,8 +1419,8 @@ footer {
         <h2 class="h-display">Donde una familia escribió, durante <em>cuatro décadas</em>, la mejor versión de sí misma.</h2>
         <div class="body-text" style="margin-top: 3rem; max-width: 700px;">
           <p class="dropcap">Pocas veces aparece una propiedad como ésta. Levantada en 1982 sobre una parcela generosa de dos mil ciento treinta metros cuadrados, Finca Unamuno 33 fue concebida como un proyecto de vida — el de una familia que entendía que el verdadero lujo no era ostentación, sino espacio, silencio y horizonte.</p>
-          <p>Quinientos sesenta y tres metros cuadrados de vivienda principal. Una segunda casa independiente para invitados. Una bodega subterránea donde se han celebrado tantos brindis. Un sondeo de agua propio que garantiza autonomía. Y una piscina rodeada de jardín maduro, con sauces, olivos y rosaledas que solo el tiempo sabe entregar.</p>
-          <p>Al fondo, cuando cae la tarde, la silueta dorada de la Catedral de Salamanca recortándose sobre el horizonte del Campo Charro. Es, en definitiva, una casa que no se vende: se entrega. Y solo a quien sepa estar a su altura.</p>
+          <p>Quinientos sesenta y tres metros cuadrados de vivienda principal. Una segunda casa independiente para invitados. Una bodega subterránea donde se han celebrado tantos brindis. Un sondeo de agua propio para el riego. Y una piscina rodeada de jardín maduro, con sauces, olivos y rosaledas que solo el tiempo sabe entregar.</p>
+          <p>Al fondo, cuando cae la tarde, la silueta dorada de la Catedral de Salamanca recortándose sobre el horizonte del Campo Charro. Es, en definitiva, una casa que no se vende: se entrega. Un lugar preparado para una nueva etapa.</p>
         </div>
       </div>
     </div>
@@ -1426,7 +1430,7 @@ footer {
 <!-- =================== STATS WITH GLASS CARDS =================== -->
 <section class="stats-section" id="cifras">
   <div class="stats-bg" id="statsBg">
-    <img src="images/06-garden-path.jpg" alt="Sendero en el jardín" loading="lazy">
+    <img src="/images/v2/sendero-casa-1800.webp" srcset="/images/v2/sendero-casa-480.webp 480w, /images/v2/sendero-casa-900.webp 900w, /images/v2/sendero-casa-1800.webp 1800w" sizes="(max-width: 700px) 100vw, 50vw" width="2000" height="1126" alt="Sendero de acceso a la vivienda" loading="lazy" decoding="async">
   </div>
   <div class="stats-content container">
     <div class="stats-header reveal">
@@ -1468,8 +1472,8 @@ footer {
 <section class="feature" id="jardin">
   <div class="container">
     <div class="feature-grid">
-      <div class="feature-image landscape clickable" data-lightbox="0">
-        <img src="images/07-willow-roses.jpg" alt="Sauce llorón y rosaledas en el jardín" loading="lazy">
+      <div class="feature-image landscape clickable" data-photo="jardin-sauce" role="button" tabindex="0" aria-label="Ampliar: Un rincón de sombra bajo el sauce">
+        <img src="/images/v2/jardin-sauce-1800.webp" srcset="/images/v2/jardin-sauce-480.webp 480w, /images/v2/jardin-sauce-900.webp 900w, /images/v2/jardin-sauce-1800.webp 1800w" sizes="(max-width: 700px) 100vw, 50vw" width="2000" height="1126" alt="Un rincón de sombra bajo el sauce" loading="lazy" decoding="async">
         <div class="float-tag">III · El Jardín</div>
         <div class="glass-caption">
           <span>Sauce llorón y rosaledas, jardín de poniente</span>
@@ -1481,7 +1485,7 @@ footer {
         <h3 class="h-section">Dos mil metros cuadrados de <em>tiempo lento</em>.</h3>
         <div class="body-text">
           <p>El jardín es, probablemente, el alma de la finca. Cuarenta años bastan para que las raíces se asienten, los árboles alcancen su porte definitivo y las rosaledas encuentren su sitio. Un sauce llorón vela el camino hacia la piscina; los olivos, los frutales y los rosales conviven con la pradera abierta.</p>
-          <p>Un sondeo de agua propio garantiza la autonomía del riego durante el verano salmantino. Hay esquinas para cada ritual: la terraza cubierta para los almuerzos largos, la zona del chill-out junto a la piscina, el rincón de las palmeras bajo la sombrilla, y, al fondo, la mesa que mira al atardecer.</p>
+          <p>Un sondeo de agua propio da servicio al riego del jardín. Hay esquinas para cada ritual: la terraza cubierta para los almuerzos largos, la zona del chill-out junto a la piscina, el rincón de las palmeras bajo la sombrilla, y, al fondo, la mesa que mira al atardecer.</p>
         </div>
       </div>
     </div>
@@ -1491,15 +1495,15 @@ footer {
 <section class="feature bg-soft" style="padding-top: 0; padding-bottom: 8rem;">
   <div class="container">
     <div class="feature-duo">
-      <div class="img-tall clickable" data-lightbox="1">
-        <img src="images/06-garden-path.jpg" alt="Sendero hacia la piscina" loading="lazy">
+      <div class="img-tall clickable" data-photo="sendero-casa" role="button" tabindex="0" aria-label="Ampliar: Sendero de acceso a la vivienda">
+        <img src="/images/v2/sendero-casa-1800.webp" srcset="/images/v2/sendero-casa-480.webp 480w, /images/v2/sendero-casa-900.webp 900w, /images/v2/sendero-casa-1800.webp 1800w" sizes="(max-width: 700px) 100vw, 50vw" width="2000" height="1126" alt="Sendero de acceso a la vivienda" loading="lazy" decoding="async">
       </div>
       <div class="img-short">
-        <div class="clickable" data-lightbox="2"><img src="images/08-garden-umbrella.jpg" alt="Sombrilla y palmeras" loading="lazy"></div>
-        <div class="clickable" data-lightbox="3"><img src="images/09-garden-deck.jpg" alt="Tarima junto al olivo" loading="lazy"></div>
+        <div class="clickable" data-photo="jardin-sombra" role="button" tabindex="0" aria-label="Ampliar: Mesa y sillas bajo la sombrilla del jardín"><img src="/images/v2/jardin-sombra-1800.webp" srcset="/images/v2/jardin-sombra-480.webp 480w, /images/v2/jardin-sombra-900.webp 900w, /images/v2/jardin-sombra-1800.webp 1800w" sizes="(max-width: 700px) 100vw, 50vw" width="2000" height="1126" alt="Mesa y sillas bajo la sombrilla del jardín" loading="lazy" decoding="async"></div>
+        <div class="clickable" data-photo="jardin-descanso" role="button" tabindex="0" aria-label="Ampliar: La pradera y sus rincones de descanso"><img src="/images/v2/jardin-descanso-1800.webp" srcset="/images/v2/jardin-descanso-480.webp 480w, /images/v2/jardin-descanso-900.webp 900w, /images/v2/jardin-descanso-1800.webp 1800w" sizes="(max-width: 700px) 100vw, 50vw" width="2000" height="1126" alt="La pradera y sus rincones de descanso" loading="lazy" decoding="async"></div>
       </div>
     </div>
-    <p class="caption" style="margin-top: 1.5rem; max-width: 600px;">El camino enlosado conduce al chill-out junto a la piscina. <em>El olivo plantado en los años noventa, hoy en plena madurez.</em></p>
+    <p class="caption" style="margin-top: 1.5rem; max-width: 600px;">Senderos entre el césped y rincones para sentarse a la sombra. <em>El jardín, a su propio ritmo.</em></p>
   </div>
 </section>
 
@@ -1507,8 +1511,8 @@ footer {
 <section class="feature">
   <div class="container">
     <div class="feature-grid reverse">
-      <div class="feature-image landscape clickable" data-lightbox="4">
-        <img src="images/15-covered-porch.jpg" alt="Porche cubierto principal" loading="lazy">
+      <div class="feature-image landscape clickable" data-photo="porche" role="button" tabindex="0" aria-label="Ampliar: Porche cubierto y mesa exterior">
+        <img src="/images/v2/porche-1600.webp" srcset="/images/v2/porche-480.webp 480w, /images/v2/porche-900.webp 900w, /images/v2/porche-1600.webp 1600w" sizes="(max-width: 700px) 100vw, 50vw" width="1600" height="1200" alt="Porche cubierto y mesa exterior" loading="lazy" decoding="async">
         <div class="float-tag">IV · La Terraza</div>
       </div>
       <div class="feature-text reveal">
@@ -1526,7 +1530,7 @@ footer {
 <!-- =================== CINEMATIC QUOTE =================== -->
 <section class="cinematic">
   <div class="cinematic-bg" id="cineBg">
-    <img src="images/05-pool-lounge.jpg" alt="Zona chill-out junto a la piscina" loading="lazy">
+    <img src="/images/v2/piscina-estar-1800.webp" srcset="/images/v2/piscina-estar-480.webp 480w, /images/v2/piscina-estar-900.webp 900w, /images/v2/piscina-estar-1800.webp 1800w" sizes="(max-width: 700px) 100vw, 50vw" width="2000" height="1126" alt="Zona de estar junto a la piscina" loading="lazy" decoding="async">
   </div>
   <div class="cinematic-content">
     <div class="cinematic-quote reveal">
@@ -1540,8 +1544,8 @@ footer {
 <section class="feature bg-deep" id="casa">
   <div class="container">
     <div class="feature-grid">
-      <div class="feature-image clickable" data-lightbox="5">
-        <img src="images/17-salon-mezzanine.jpg" alt="Salón principal con doble altura" loading="lazy">
+      <div class="feature-image clickable" data-photo="salon-altura" role="button" tabindex="0" aria-label="Ampliar: El salón principal visto desde la galería superior">
+        <img src="/images/v2/salon-altura-1200.webp" srcset="/images/v2/salon-altura-480.webp 480w, /images/v2/salon-altura-900.webp 900w, /images/v2/salon-altura-1200.webp 1200w" sizes="(max-width: 700px) 100vw, 50vw" width="1200" height="1600" alt="El salón principal visto desde la galería superior" loading="lazy" decoding="async">
         <div class="float-tag">V · El Salón</div>
       </div>
       <div class="feature-text reveal">
@@ -1559,12 +1563,12 @@ footer {
 <section class="feature bg-deep" style="padding-top: 0;">
   <div class="container">
     <div class="feature-duo">
-      <div class="img-tall clickable" data-lightbox="6">
-        <img src="images/03-dining-room.jpg" alt="Comedor con vistas a la terraza" loading="lazy">
+      <div class="img-tall clickable" data-photo="comedor-tarde" role="button" tabindex="0" aria-label="Ampliar: El comedor abierto a la terraza al caer la tarde">
+        <img src="/images/v2/comedor-tarde-1600.webp" srcset="/images/v2/comedor-tarde-480.webp 480w, /images/v2/comedor-tarde-900.webp 900w, /images/v2/comedor-tarde-1600.webp 1600w" sizes="(max-width: 700px) 100vw, 50vw" width="1600" height="1200" alt="El comedor abierto a la terraza al caer la tarde" loading="lazy" decoding="async">
       </div>
       <div class="img-short">
-        <div class="clickable" data-lightbox="7"><img src="images/18-master-bedroom.jpg" alt="Dormitorio principal" loading="lazy"></div>
-        <div class="clickable" data-lightbox="8"><img src="images/20-hallway.jpg" alt="Recibidor" loading="lazy"></div>
+        <div class="clickable" data-photo="suite" role="button" tabindex="0" aria-label="Ampliar: Dormitorio principal"><img src="/images/v2/suite-600.webp" srcset="/images/v2/suite-480.webp 480w, /images/v2/suite-600.webp 600w" sizes="(max-width: 700px) 100vw, 50vw" width="600" height="450" alt="Dormitorio principal" loading="lazy" decoding="async"></div>
+        <div class="clickable" data-photo="recibidor" role="button" tabindex="0" aria-label="Ampliar: Recibidor y pasillo de la vivienda"><img src="/images/v2/recibidor-600.webp" srcset="/images/v2/recibidor-480.webp 480w, /images/v2/recibidor-600.webp 600w" sizes="(max-width: 700px) 100vw, 50vw" width="600" height="450" alt="Recibidor y pasillo de la vivienda" loading="lazy" decoding="async"></div>
       </div>
     </div>
   </div>
@@ -1574,8 +1578,8 @@ footer {
 <section class="feature">
   <div class="container">
     <div class="feature-grid reverse">
-      <div class="feature-image clickable" data-lightbox="9">
-        <img src="images/13-guest-attic.jpg" alt="Dormitorio abuhardillado de la casa de invitados" loading="lazy">
+      <div class="feature-image clickable" data-photo="invitados-dormitorio" role="button" tabindex="0" aria-label="Ampliar: Dormitorio abuhardillado de la casa de invitados">
+        <img src="/images/v2/invitados-dormitorio-600.webp" srcset="/images/v2/invitados-dormitorio-480.webp 480w, /images/v2/invitados-dormitorio-600.webp 600w" sizes="(max-width: 700px) 100vw, 50vw" width="600" height="450" alt="Dormitorio abuhardillado de la casa de invitados" loading="lazy" decoding="async">
         <div class="float-tag">VI · Casa de Invitados</div>
       </div>
       <div class="feature-text reveal">
@@ -1583,7 +1587,7 @@ footer {
         <h3 class="h-section">Una segunda vivienda <em>completamente independiente</em>.</h3>
         <div class="body-text">
           <p>Dentro de la misma parcela, una segunda construcción de dos plantas se levanta con total autonomía. Acabados en madera natural, salón con cocina americana, dormitorio amplio y baño completo. Un espacio íntimo, acogedor, que conserva el carácter del refugio rural.</p>
-          <p>Ideal para huéspedes, para un familiar que necesite privacidad, o como vivienda de explotación turística en una de las regiones con mayor demanda hotelera del centro de España. <em>Doble cédula. Doble oportunidad.</em></p>
+          <p>Un espacio para huéspedes o para un familiar que necesite privacidad.</p>
         </div>
       </div>
     </div>
@@ -1598,21 +1602,10 @@ footer {
         <div class="eyebrow"><span class="eyebrow-num">vii.</span> &nbsp; Galería</div>
         <h3 class="h-section" style="margin-bottom: 0;">Las imágenes <em>cuentan</em><br>lo que las palabras solo sugieren.</h3>
       </div>
-      <p class="right reveal">Veinte instantáneas tomadas en distintas horas del día. <em>Pulse cualquier imagen para ampliar.</em></p>
+      <p class="right reveal">29 fotografías del jardín, la vivienda y la casa de invitados. <em>Pulse para verlas completas.</em></p>
     </div>
-    <div class="gallery-grid">
-      <div class="gi gi-1 clickable" data-lightbox="10"><img src="images/05-pool-lounge.jpg" alt="Zona chill-out junto a la piscina" loading="lazy"></div>
-      <div class="gi gi-2 clickable" data-lightbox="11"><img src="images/10-entrance-stairs.jpg" alt="Acceso principal con rosales" loading="lazy"></div>
-      <div class="gi gi-3 clickable" data-lightbox="12"><img src="images/02-terrace-lantern.jpg" alt="Porche con farol oriental" loading="lazy"></div>
-      <div class="gi gi-4 clickable" data-lightbox="13"><img src="images/19-bathroom-spiral.jpg" alt="Baño principal con hidromasaje" loading="lazy"></div>
-      <div class="gi gi-5 clickable" data-lightbox="14"><img src="images/04-bedroom-red.jpg" alt="Dormitorio con armarios en madera" loading="lazy"></div>
-      <div class="gi gi-6 clickable" data-lightbox="15"><img src="images/11-guest-living.jpg" alt="Salón casa de invitados" loading="lazy"></div>
-      <div class="gi gi-7 clickable" data-lightbox="16"><img src="images/16-guest-attic-2.jpg" alt="Dormitorio abuhardillado" loading="lazy"></div>
-      <div class="gi gi-8 clickable" data-lightbox="17"><img src="images/12-guest-bedroom-1.jpg" alt="Habitación en casa de invitados" loading="lazy"></div>
-      <div class="gi gi-9 clickable" data-lightbox="18"><img src="images/14-guest-living-2.jpg" alt="Vista interior casa de invitados" loading="lazy"></div>
-    </div>
-  </div>
-</section>
+    <div class="photo-controls" aria-label="Filtrar fotografías"><button type="button" data-filter="all" aria-pressed="true">Todas · 29</button><button type="button" data-filter="exterior" aria-pressed="false">Jardín y piscina</button><button type="button" data-filter="interior" aria-pressed="false">La casa</button><button type="button" data-filter="invitados" aria-pressed="false">Invitados</button></div><p class="photo-status" aria-live="polite"></p><div class="photo-gallery"><a class="photo-thumb" href="/images/v2/jardin-casa-1800.webp" data-photo="jardin-casa" data-category="exterior" aria-label="Ampliar: La casa entre los árboles del jardín"><img src="/images/v2/jardin-casa-1800.webp" srcset="/images/v2/jardin-casa-480.webp 480w, /images/v2/jardin-casa-900.webp 900w, /images/v2/jardin-casa-1800.webp 1800w" sizes="(max-width: 700px) 50vw, 33vw" width="2000" height="1126" alt="La casa entre los árboles del jardín" loading="lazy" decoding="async"><span>La casa entre los árboles del jardín</span></a><a class="photo-thumb" href="/images/v2/fachada-1800.webp" data-photo="fachada" data-category="exterior" aria-label="Ampliar: Fachada de la vivienda desde el jardín"><img src="/images/v2/fachada-1800.webp" srcset="/images/v2/fachada-480.webp 480w, /images/v2/fachada-900.webp 900w, /images/v2/fachada-1800.webp 1800w" sizes="(max-width: 700px) 50vw, 33vw" width="2000" height="1126" alt="Fachada de la vivienda desde el jardín" loading="lazy" decoding="async"><span>Fachada de la vivienda desde el jardín</span></a><a class="photo-thumb" href="/images/v2/jardin-sauce-1800.webp" data-photo="jardin-sauce" data-category="exterior" aria-label="Ampliar: Un rincón de sombra bajo el sauce"><img src="/images/v2/jardin-sauce-1800.webp" srcset="/images/v2/jardin-sauce-480.webp 480w, /images/v2/jardin-sauce-900.webp 900w, /images/v2/jardin-sauce-1800.webp 1800w" sizes="(max-width: 700px) 50vw, 33vw" width="2000" height="1126" alt="Un rincón de sombra bajo el sauce" loading="lazy" decoding="async"><span>Un rincón de sombra bajo el sauce</span></a><a class="photo-thumb" href="/images/v2/piscina-1800.webp" data-photo="piscina" data-category="exterior" aria-label="Ampliar: Piscina privada y jardín"><img src="/images/v2/piscina-1800.webp" srcset="/images/v2/piscina-480.webp 480w, /images/v2/piscina-900.webp 900w, /images/v2/piscina-1800.webp 1800w" sizes="(max-width: 700px) 50vw, 33vw" width="2000" height="1126" alt="Piscina privada y jardín" loading="lazy" decoding="async"><span>Piscina privada y jardín</span></a><a class="photo-thumb" href="/images/v2/piscina-estar-1800.webp" data-photo="piscina-estar" data-category="exterior" aria-label="Ampliar: Zona de estar junto a la piscina"><img src="/images/v2/piscina-estar-1800.webp" srcset="/images/v2/piscina-estar-480.webp 480w, /images/v2/piscina-estar-900.webp 900w, /images/v2/piscina-estar-1800.webp 1800w" sizes="(max-width: 700px) 50vw, 33vw" width="2000" height="1126" alt="Zona de estar junto a la piscina" loading="lazy" decoding="async"><span>Zona de estar junto a la piscina</span></a><a class="photo-thumb" href="/images/v2/terraza-piscina-1800.webp" data-photo="terraza-piscina" data-category="exterior" aria-label="Ampliar: Tarima y zona de descanso exterior"><img src="/images/v2/terraza-piscina-1800.webp" srcset="/images/v2/terraza-piscina-480.webp 480w, /images/v2/terraza-piscina-900.webp 900w, /images/v2/terraza-piscina-1800.webp 1800w" sizes="(max-width: 700px) 50vw, 33vw" width="2000" height="1126" alt="Tarima y zona de descanso exterior" loading="lazy" decoding="async"><span>Tarima y zona de descanso exterior</span></a><a class="photo-thumb" href="/images/v2/sendero-casa-1800.webp" data-photo="sendero-casa" data-category="exterior" aria-label="Ampliar: Sendero de acceso a la vivienda"><img src="/images/v2/sendero-casa-1800.webp" srcset="/images/v2/sendero-casa-480.webp 480w, /images/v2/sendero-casa-900.webp 900w, /images/v2/sendero-casa-1800.webp 1800w" sizes="(max-width: 700px) 50vw, 33vw" width="2000" height="1126" alt="Sendero de acceso a la vivienda" loading="lazy" decoding="async"><span>Sendero de acceso a la vivienda</span></a><a class="photo-thumb" href="/images/v2/jardin-sombra-1800.webp" data-photo="jardin-sombra" data-category="exterior" aria-label="Ampliar: Mesa y sillas bajo la sombrilla del jardín"><img src="/images/v2/jardin-sombra-1800.webp" srcset="/images/v2/jardin-sombra-480.webp 480w, /images/v2/jardin-sombra-900.webp 900w, /images/v2/jardin-sombra-1800.webp 1800w" sizes="(max-width: 700px) 50vw, 33vw" width="2000" height="1126" alt="Mesa y sillas bajo la sombrilla del jardín" loading="lazy" decoding="async"><span>Mesa y sillas bajo la sombrilla del jardín</span></a><a class="photo-thumb" href="/images/v2/jardin-descanso-1800.webp" data-photo="jardin-descanso" data-category="exterior" aria-label="Ampliar: La pradera y sus rincones de descanso"><img src="/images/v2/jardin-descanso-1800.webp" srcset="/images/v2/jardin-descanso-480.webp 480w, /images/v2/jardin-descanso-900.webp 900w, /images/v2/jardin-descanso-1800.webp 1800w" sizes="(max-width: 700px) 50vw, 33vw" width="2000" height="1126" alt="La pradera y sus rincones de descanso" loading="lazy" decoding="async"><span>La pradera y sus rincones de descanso</span></a><a class="photo-thumb" href="/images/v2/camino-rosales-1200.webp" data-photo="camino-rosales" data-category="exterior" aria-label="Ampliar: Camino de entrada entre rosales"><img src="/images/v2/camino-rosales-1200.webp" srcset="/images/v2/camino-rosales-480.webp 480w, /images/v2/camino-rosales-900.webp 900w, /images/v2/camino-rosales-1200.webp 1200w" sizes="(max-width: 700px) 50vw, 33vw" width="1200" height="1600" alt="Camino de entrada entre rosales" loading="lazy" decoding="async"><span>Camino de entrada entre rosales</span></a><a class="photo-thumb" href="/images/v2/casa-parcela-1600.webp" data-photo="casa-parcela" data-category="exterior" aria-label="Ampliar: Vista abierta de la casa y la parcela"><img src="/images/v2/casa-parcela-1600.webp" srcset="/images/v2/casa-parcela-480.webp 480w, /images/v2/casa-parcela-900.webp 900w, /images/v2/casa-parcela-1600.webp 1600w" sizes="(max-width: 700px) 50vw, 33vw" width="1600" height="1200" alt="Vista abierta de la casa y la parcela" loading="lazy" decoding="async"><span>Vista abierta de la casa y la parcela</span></a><a class="photo-thumb" href="/images/v2/comedor-tarde-1600.webp" data-photo="comedor-tarde" data-category="interior" aria-label="Ampliar: El comedor abierto a la terraza al caer la tarde"><img src="/images/v2/comedor-tarde-1600.webp" srcset="/images/v2/comedor-tarde-480.webp 480w, /images/v2/comedor-tarde-900.webp 900w, /images/v2/comedor-tarde-1600.webp 1600w" sizes="(max-width: 700px) 50vw, 33vw" width="1600" height="1200" alt="El comedor abierto a la terraza al caer la tarde" loading="lazy" decoding="async"><span>El comedor abierto a la terraza al caer la tarde</span></a><a class="photo-thumb" href="/images/v2/mesa-terraza-1600.webp" data-photo="mesa-terraza" data-category="exterior" aria-label="Ampliar: La mesa de la terraza con vistas al jardín"><img src="/images/v2/mesa-terraza-1600.webp" srcset="/images/v2/mesa-terraza-480.webp 480w, /images/v2/mesa-terraza-900.webp 900w, /images/v2/mesa-terraza-1600.webp 1600w" sizes="(max-width: 700px) 50vw, 33vw" width="1600" height="1200" alt="La mesa de la terraza con vistas al jardín" loading="lazy" decoding="async"><span>La mesa de la terraza con vistas al jardín</span></a><a class="photo-thumb" href="/images/v2/porche-noche-1200.webp" data-photo="porche-noche" data-category="exterior" aria-label="Ampliar: El porche al anochecer"><img src="/images/v2/porche-noche-1200.webp" srcset="/images/v2/porche-noche-480.webp 480w, /images/v2/porche-noche-900.webp 900w, /images/v2/porche-noche-1200.webp 1200w" sizes="(max-width: 700px) 50vw, 33vw" width="1200" height="1600" alt="El porche al anochecer" loading="lazy" decoding="async"><span>El porche al anochecer</span></a><a class="photo-thumb" href="/images/v2/porche-1600.webp" data-photo="porche" data-category="exterior" aria-label="Ampliar: Porche cubierto y mesa exterior"><img src="/images/v2/porche-1600.webp" srcset="/images/v2/porche-480.webp 480w, /images/v2/porche-900.webp 900w, /images/v2/porche-1600.webp 1600w" sizes="(max-width: 700px) 50vw, 33vw" width="1600" height="1200" alt="Porche cubierto y mesa exterior" loading="lazy" decoding="async"><span>Porche cubierto y mesa exterior</span></a><a class="photo-thumb" href="/images/v2/salon-chimenea-1200.webp" data-photo="salon-chimenea" data-category="interior" aria-label="Ampliar: Salón principal con chimenea"><img src="/images/v2/salon-chimenea-1200.webp" srcset="/images/v2/salon-chimenea-480.webp 480w, /images/v2/salon-chimenea-900.webp 900w, /images/v2/salon-chimenea-1200.webp 1200w" sizes="(max-width: 700px) 50vw, 33vw" width="1200" height="1600" alt="Salón principal con chimenea" loading="lazy" decoding="async"><span>Salón principal con chimenea</span></a><a class="photo-thumb" href="/images/v2/salon-altura-1200.webp" data-photo="salon-altura" data-category="interior" aria-label="Ampliar: El salón principal visto desde la galería superior"><img src="/images/v2/salon-altura-1200.webp" srcset="/images/v2/salon-altura-480.webp 480w, /images/v2/salon-altura-900.webp 900w, /images/v2/salon-altura-1200.webp 1200w" sizes="(max-width: 700px) 50vw, 33vw" width="1200" height="1600" alt="El salón principal visto desde la galería superior" loading="lazy" decoding="async"><span>El salón principal visto desde la galería superior</span></a><a class="photo-thumb" href="/images/v2/salon-galeria-1200.webp" data-photo="salon-galeria" data-category="interior" aria-label="Ampliar: Zona de estar y comedor del salón"><img src="/images/v2/salon-galeria-1200.webp" srcset="/images/v2/salon-galeria-480.webp 480w, /images/v2/salon-galeria-900.webp 900w, /images/v2/salon-galeria-1200.webp 1200w" sizes="(max-width: 700px) 50vw, 33vw" width="1200" height="1600" alt="Zona de estar y comedor del salón" loading="lazy" decoding="async"><span>Zona de estar y comedor del salón</span></a><a class="photo-thumb" href="/images/v2/bano-1200.webp" data-photo="bano" data-category="interior" aria-label="Ampliar: Baño con ducha de la vivienda"><img src="/images/v2/bano-1200.webp" srcset="/images/v2/bano-480.webp 480w, /images/v2/bano-900.webp 900w, /images/v2/bano-1200.webp 1200w" sizes="(max-width: 700px) 50vw, 33vw" width="1200" height="1600" alt="Baño con ducha de la vivienda" loading="lazy" decoding="async"><span>Baño con ducha de la vivienda</span></a><a class="photo-thumb" href="/images/v2/dormitorio-1200.webp" data-photo="dormitorio" data-category="interior" aria-label="Ampliar: Dormitorio con armarios de madera"><img src="/images/v2/dormitorio-1200.webp" srcset="/images/v2/dormitorio-480.webp 480w, /images/v2/dormitorio-900.webp 900w, /images/v2/dormitorio-1200.webp 1200w" sizes="(max-width: 700px) 50vw, 33vw" width="1200" height="1600" alt="Dormitorio con armarios de madera" loading="lazy" decoding="async"><span>Dormitorio con armarios de madera</span></a><a class="photo-thumb" href="/images/v2/jardin-atardecer-1600.webp" data-photo="jardin-atardecer" data-category="exterior" aria-label="Ampliar: Última luz sobre el jardín y la piscina"><img src="/images/v2/jardin-atardecer-1600.webp" srcset="/images/v2/jardin-atardecer-480.webp 480w, /images/v2/jardin-atardecer-900.webp 900w, /images/v2/jardin-atardecer-1600.webp 1600w" sizes="(max-width: 700px) 50vw, 33vw" width="1600" height="1200" alt="Última luz sobre el jardín y la piscina" loading="lazy" decoding="async"><span>Última luz sobre el jardín y la piscina</span></a><a class="photo-thumb" href="/images/v2/piscina-luz-1200.webp" data-photo="piscina-luz" data-category="exterior" aria-label="Ampliar: Piscina y pradera a la luz del día"><img src="/images/v2/piscina-luz-1200.webp" srcset="/images/v2/piscina-luz-480.webp 480w, /images/v2/piscina-luz-900.webp 900w, /images/v2/piscina-luz-1200.webp 1200w" sizes="(max-width: 700px) 50vw, 33vw" width="1200" height="1600" alt="Piscina y pradera a la luz del día" loading="lazy" decoding="async"><span>Piscina y pradera a la luz del día</span></a><a class="photo-thumb" href="/images/v2/acceso-600.webp" data-photo="acceso" data-category="exterior" aria-label="Ampliar: Escalera exterior de acceso a la vivienda"><img src="/images/v2/acceso-600.webp" srcset="/images/v2/acceso-480.webp 480w, /images/v2/acceso-600.webp 600w" sizes="(max-width: 700px) 50vw, 33vw" width="600" height="450" alt="Escalera exterior de acceso a la vivienda" loading="lazy" decoding="async"><span>Escalera exterior de acceso a la vivienda</span></a><a class="photo-thumb" href="/images/v2/invitados-salon-600.webp" data-photo="invitados-salon" data-category="invitados" aria-label="Ampliar: Salón abuhardillado de la casa de invitados"><img src="/images/v2/invitados-salon-600.webp" srcset="/images/v2/invitados-salon-480.webp 480w, /images/v2/invitados-salon-600.webp 600w" sizes="(max-width: 700px) 50vw, 33vw" width="600" height="450" alt="Salón abuhardillado de la casa de invitados" loading="lazy" decoding="async"><span>Salón abuhardillado de la casa de invitados</span></a><a class="photo-thumb" href="/images/v2/invitados-cocina-600.webp" data-photo="invitados-cocina" data-category="invitados" aria-label="Ampliar: Zona de estar y cocina de la casa de invitados"><img src="/images/v2/invitados-cocina-600.webp" srcset="/images/v2/invitados-cocina-480.webp 480w, /images/v2/invitados-cocina-600.webp 600w" sizes="(max-width: 700px) 50vw, 33vw" width="600" height="450" alt="Zona de estar y cocina de la casa de invitados" loading="lazy" decoding="async"><span>Zona de estar y cocina de la casa de invitados</span></a><a class="photo-thumb" href="/images/v2/invitados-dormitorio-600.webp" data-photo="invitados-dormitorio" data-category="invitados" aria-label="Ampliar: Dormitorio abuhardillado de la casa de invitados"><img src="/images/v2/invitados-dormitorio-600.webp" srcset="/images/v2/invitados-dormitorio-480.webp 480w, /images/v2/invitados-dormitorio-600.webp 600w" sizes="(max-width: 700px) 50vw, 33vw" width="600" height="450" alt="Dormitorio abuhardillado de la casa de invitados" loading="lazy" decoding="async"><span>Dormitorio abuhardillado de la casa de invitados</span></a><a class="photo-thumb" href="/images/v2/suite-600.webp" data-photo="suite" data-category="interior" aria-label="Ampliar: Dormitorio principal"><img src="/images/v2/suite-600.webp" srcset="/images/v2/suite-480.webp 480w, /images/v2/suite-600.webp 600w" sizes="(max-width: 700px) 50vw, 33vw" width="600" height="450" alt="Dormitorio principal" loading="lazy" decoding="async"><span>Dormitorio principal</span></a><a class="photo-thumb" href="/images/v2/bano-escalera-600.webp" data-photo="bano-escalera" data-category="interior" aria-label="Ampliar: Baño con cabina de ducha y escalera de caracol"><img src="/images/v2/bano-escalera-600.webp" srcset="/images/v2/bano-escalera-480.webp 480w, /images/v2/bano-escalera-600.webp 600w" sizes="(max-width: 700px) 50vw, 33vw" width="600" height="450" alt="Baño con cabina de ducha y escalera de caracol" loading="lazy" decoding="async"><span>Baño con cabina de ducha y escalera de caracol</span></a><a class="photo-thumb" href="/images/v2/recibidor-600.webp" data-photo="recibidor" data-category="interior" aria-label="Ampliar: Recibidor y pasillo de la vivienda"><img src="/images/v2/recibidor-600.webp" srcset="/images/v2/recibidor-480.webp 480w, /images/v2/recibidor-600.webp 600w" sizes="(max-width: 700px) 50vw, 33vw" width="600" height="450" alt="Recibidor y pasillo de la vivienda" loading="lazy" decoding="async"><span>Recibidor y pasillo de la vivienda</span></a></div><button type="button" class="photo-more">Ver todas las fotografías ↓</button>
+</div></section>
 
 <!-- =================== PLAN ISOMÉTRICO =================== -->
 <section class="plan-section" id="plano">
@@ -1724,36 +1717,7 @@ footer {
 </section>
 
 <!-- =================== TOUR =================== -->
-<section class="tour" id="tour">
-  <div class="container">
-    <div class="tour-header reveal">
-      <div class="eyebrow center light"><span class="eyebrow-num">ix.</span> &nbsp; Tour Inmersivo</div>
-      <h3 class="h-section">Recorre la casa, habitación por habitación.</h3>
-      <p class="lede">Tour virtual realizado por idealista en 3D. Camina por cada estancia a tu propio ritmo, gira la vista, mide distancias. Es la experiencia más cercana a estar allí en persona.</p>
-    </div>
-    <div class="tour-frame reveal">
-      <iframe src="https://my.matterport.com/show/?m=ZKW4kUeZWbb&play=1&lang=es" allowfullscreen allow="xr-spatial-tracking"></iframe>
-    </div>
-    <div class="tour-meta reveal">
-      <div class="tour-meta-item">
-        <strong>30</strong>
-        <span>Fotografías</span>
-      </div>
-      <div class="tour-meta-item">
-        <strong>3</strong>
-        <span>Planos</span>
-      </div>
-      <div class="tour-meta-item">
-        <strong>1</strong>
-        <span>Tour 3D Matterport</span>
-      </div>
-      <div class="tour-meta-item">
-        <strong>HD</strong>
-        <span>Multimedia profesional</span>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="tour" id="tour"><div class="container"><div class="tour-header reveal"><div class="eyebrow center light"><span class="eyebrow-num">ix.</span> &nbsp; El Recorrido</div><h3 class="h-section">Descubre la casa, a tu propio ritmo.</h3><p class="lede">Desde el jardín hasta los espacios interiores. Explora las 29 fotografías de la finca y amplía cada detalle.</p><a class="btn btn-ghost" href="#galeria" style="margin-top:2rem;color:var(--paper);border-color:var(--paper)">Explorar las fotografías ↗</a></div></div></section>
 
 <!-- =================== LOCATION (MAP) =================== -->
 <section class="location" id="entorno">
@@ -1861,66 +1825,12 @@ footer {
       </div>
     </div>
 
-    <div class="energy-band reveal">
-      <div>
-        <h3>Certificado Energético</h3>
-        <p>La calificación energética del inmueble se encuentra <em>en proceso de actualización</em>. Se entregará al comprador una vez emitida por el técnico competente, conforme al Real Decreto 390/2021.</p>
-        <p style="margin-top: 1rem; font-style: italic; color: var(--ink-mute);">Vivienda construida en 1982. Climatización individual mediante calefacción y aire acondicionado.</p>
-      </div>
-      <div class="energy-scale">
-        <div class="energy-row a">A</div>
-        <div class="energy-row b">B</div>
-        <div class="energy-row c">C</div>
-        <div class="energy-row d">D</div>
-        <div class="energy-row e">E</div>
-        <div class="energy-row f">F</div>
-        <div class="energy-row g">G</div>
-      </div>
-    </div>
+    <div class="energy-band reveal"><div><h3>Documentación de la vivienda</h3><p>Solicita a la agencia el certificado energético y la documentación actualizada de la propiedad.</p></div></div>
   </div>
 </section>
 
 <!-- =================== INVESTMENT =================== -->
-<section class="investment" id="inversion">
-  <div class="container">
-    <div class="investment-grid">
-      <div class="reveal">
-        <div class="eyebrow"><span class="eyebrow-num">xii.</span> &nbsp; Perspectiva</div>
-        <h3 class="h-section">Una oportunidad <em>singular</em><br>en el mercado salmantino.</h3>
-        <div class="body-text">
-          <p>El precio se sitúa en 1.332 €/m² construido. Para una propiedad de estas dimensiones —parcela de más de dos mil metros cuadrados, dos viviendas, piscina y bodega— a diez minutos de una ciudad UNESCO, este ratio es notablemente competitivo.</p>
-          <p>Las parcelas urbanas en Peñasolana se comercializan actualmente entre 200 y 300 €/m². Solo el valor del suelo de Finca Unamuno 33 oscilaría entre 425.000 € y 640.000 €. El resto, las dos construcciones y los cuarenta años de jardín maduro, casi quedan como obsequio.</p>
-        </div>
-      </div>
-      <div class="investment-cards reveal-stagger">
-        <div class="invest-card">
-          <span class="ord">i.</span>
-          <h4>Precio por m²</h4>
-          <div class="figure">1.332 <em>€</em></div>
-          <p>Por debajo del precio medio de obra nueva en la zona (1.800 €/m²).</p>
-        </div>
-        <div class="invest-card">
-          <span class="ord">ii.</span>
-          <h4>Valor del Suelo</h4>
-          <div class="figure">~ <em>500.000 €</em></div>
-          <p>Estimado sobre el precio actual del m² urbano en Peñasolana.</p>
-        </div>
-        <div class="invest-card">
-          <span class="ord">iii.</span>
-          <h4>Renta turística</h4>
-          <div class="figure"><em>140</em> €/noche</div>
-          <p>Estimación conservadora para la casa de invitados en temporada media.</p>
-        </div>
-        <div class="invest-card">
-          <span class="ord">iv.</span>
-          <h4>Demanda en zona</h4>
-          <div class="figure">+ <em>40 %</em></div>
-          <p>Crecimiento de búsquedas en Peñasolana en los últimos 24 meses.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
 
 <!-- =================== PROCESS =================== -->
 <section class="process" id="proceso">
@@ -1934,7 +1844,7 @@ footer {
       <div class="process-step active">
         <div class="process-num">i</div>
         <h4>Solicitud de <em>Visita</em></h4>
-        <p>Formulario online o llamada directa. Confirmación en menos de 24 horas y propuesta de fecha.</p>
+        <p>Contacta con la agencia y acuerda una fecha para conocer la finca.</p>
       </div>
       <div class="process-step">
         <div class="process-num">ii</div>
@@ -1955,18 +1865,8 @@ footer {
   </div>
 </section>
 
-<!-- =================== PRICE BLOCK =================== -->
-<section class="price-block">
-  <div class="container reveal">
-    <div class="eyebrow center"><span class="eyebrow-num">xiv.</span> &nbsp; Precio</div>
-    <div class="price-figure">750.000<em> €</em></div>
-    <p class="price-detail">1.332 € / m² construido <em>—</em> Honorarios profesionales incluidos</p>
-    <div class="price-cta-row">
-      <a href="#contacto" class="btn btn-solid">Agendar Visita Privada</a>
-      <a href="https://my.matterport.com/show/?m=ZKW4kUeZWbb&amp;play=1&amp;lang=es" target="_blank" rel="noopener" class="btn btn-ghost">Recorrer Tour Virtual</a>
-    </div>
-  </div>
-</section>
+<!-- =================== VISIT INVITATION =================== -->
+
 
 <!-- =================== CONTACT =================== -->
 <section class="contact" id="contacto">
@@ -1990,58 +1890,16 @@ footer {
           <span class="val">N.º 106036330</span>
         </div>
         <div class="contact-line">
-          <span class="lbl">Anuncio Original</span>
-          <span class="val"><a href="https://www.idealista.com/inmueble/108498107/" target="_blank" rel="noopener">Ver en idealista &nbsp;↗</a></span>
+          <span class="lbl">Información y visitas</span>
+          <span class="val"><a href="https://premiereinmo.com/contacto/" target="_blank" rel="noopener">Contactar con la agencia &nbsp;↗</a></span>
         </div>
       </div>
 
       <div class="contact-form reveal">
-        <h3>Solicitud de <em>visita privada</em></h3>
-        <p class="form-intro">Respuesta en menos de 24 horas. Confidencialidad garantizada.</p>
-
-        <div class="form-row">
-          <div class="form-field">
-            <label for="f-name">Nombre</label>
-            <input type="text" id="f-name" name="name" autocomplete="given-name">
-          </div>
-          <div class="form-field">
-            <label for="f-last">Apellidos</label>
-            <input type="text" id="f-last" name="lastname" autocomplete="family-name">
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-field">
-            <label for="f-email">Correo electrónico</label>
-            <input type="email" id="f-email" name="email" autocomplete="email">
-          </div>
-          <div class="form-field">
-            <label for="f-phone">Teléfono</label>
-            <input type="tel" id="f-phone" name="phone" autocomplete="tel">
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-field">
-            <label for="f-when">Fecha preferida</label>
-            <input type="date" id="f-when" name="when">
-          </div>
-          <div class="form-field">
-            <label for="f-time">Franja horaria</label>
-            <select id="f-time" name="time">
-              <option value="">Indique franja</option>
-              <option>Mañana (10–13h)</option>
-              <option>Mediodía (13–15h)</option>
-              <option>Tarde (16–19h)</option>
-              <option>Atardecer (19–21h)</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-field">
-          <label for="f-msg">Mensaje</label>
-          <textarea id="f-msg" name="message" placeholder="Indique cualquier consulta sobre la propiedad."></textarea>
-        </div>
-        <button type="button" class="btn btn-solid form-submit" id="submitBtn">Enviar solicitud</button>
-        <p class="form-note" id="formNote" style="display:none;"></p>
-      </div>
+<h3>Ven a <em>conocerla</em></h3><p class="form-intro">Concierta una visita directamente con Premiere Inmobiliaria a través de su página de contacto.</p>
+<a class="btn btn-solid" href="https://premiereinmo.com/contacto/" target="_blank" rel="noopener">Contactar con la agencia ↗</a>
+<p style="margin-top:2rem">También puedes empezar con un recorrido por las fotografías de la vivienda, el jardín y la casa de invitados.</p>
+<a class="btn btn-ghost" style="margin-top:1rem" href="#galeria">Ver las fotografías ↗</a></div>
     </div>
   </div>
 </section>
@@ -2061,12 +1919,12 @@ footer {
         <p><a href="#galeria">Galería</a></p>
         <p><a href="#entorno">El Entorno</a></p>
         <p><a href="#ficha">Ficha Técnica</a></p>
-        <p><a href="#proceso">Proceso de Compra</a></p>
+        <p><a href="#proceso">Proceso de Compra</a></p><p><a href="/calma">La finca, otra mirada ↗</a></p>
       </div>
       <div class="footer-col">
         <h5>Comercializa</h5>
         <p>Premiere Inmobiliaria — Salamanca</p>
-        <p style="margin-top: 1rem;"><a href="https://www.idealista.com/inmueble/108498107/" target="_blank" rel="noopener">Anuncio en idealista ↗</a></p>
+        <p style="margin-top: 1rem;"><a href="https://premiereinmo.com/contacto/" target="_blank" rel="noopener">Contactar con la agencia ↗</a></p>
         <p style="margin-top: 0.5rem;"><a href="https://www.idealista.com/pro/premiere-inmobiliaria/" target="_blank" rel="noopener">Ficha de la agencia ↗</a></p>
       </div>
     </div>
@@ -2078,15 +1936,7 @@ footer {
 </footer>
 
 <!-- =================== LIGHTBOX =================== -->
-<div class="lightbox" id="lightbox">
-  <button class="lightbox-close" id="lbClose" aria-label="Cerrar">✕</button>
-  <button class="lightbox-nav lightbox-prev" id="lbPrev" aria-label="Anterior">‹</button>
-  <button class="lightbox-nav lightbox-next" id="lbNext" aria-label="Siguiente">›</button>
-  <div class="lightbox-content">
-    <img id="lbImg" src="" alt="">
-  </div>
-  <div class="lightbox-counter" id="lbCounter"></div>
-</div>
+
 
 <!-- =================== SCRIPTS =================== -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
@@ -2185,7 +2035,7 @@ function onScroll() {
     indexBar.classList.toggle('visible', y > window.innerHeight * 0.8);
   }
 
-  // sticky price bar (after stats section)
+  // sticky visit bar (after stats section)
   if (statsSection) {
     const triggerY = statsSection.offsetTop + statsSection.offsetHeight;
     stickyBar.classList.toggle('visible', y > triggerY);
@@ -2275,70 +2125,17 @@ const counterObs = new IntersectionObserver((entries) => {
 document.querySelectorAll('[data-count]').forEach(el => counterObs.observe(el));
 
 // =========================================================
-// LIGHTBOX
-// =========================================================
-const lb = document.getElementById('lightbox');
-const lbImg = document.getElementById('lbImg');
-const lbClose = document.getElementById('lbClose');
-const lbPrev = document.getElementById('lbPrev');
-const lbNext = document.getElementById('lbNext');
-const lbCounter = document.getElementById('lbCounter');
-
-const lightboxItems = document.querySelectorAll('[data-lightbox]');
-const images = [];
-lightboxItems.forEach((el) => {
-  const img = el.querySelector('img');
-  if (img) images.push({ src: img.src, alt: img.alt });
-});
-let currentIdx = 0;
-
-function openLightbox(idx) {
-  currentIdx = idx;
-  lbImg.src = images[idx].src;
-  lbImg.alt = images[idx].alt;
-  lbCounter.textContent = `${idx + 1} / ${images.length}`;
-  lb.classList.add('active');
-  document.body.classList.add('lock');
-}
-function closeLightbox() {
-  lb.classList.remove('active');
-  document.body.classList.remove('lock');
-}
-function nav_lb(dir) {
-  currentIdx = (currentIdx + dir + images.length) % images.length;
-  lbImg.src = images[currentIdx].src;
-  lbImg.alt = images[currentIdx].alt;
-  lbCounter.textContent = `${currentIdx + 1} / ${images.length}`;
-}
-lightboxItems.forEach((el) => {
-  el.addEventListener('click', () => {
-    const idx = parseInt(el.getAttribute('data-lightbox'), 10);
-    openLightbox(idx);
-  });
-});
-lbClose.addEventListener('click', closeLightbox);
-lbPrev.addEventListener('click', () => nav_lb(-1));
-lbNext.addEventListener('click', () => nav_lb(1));
-lb.addEventListener('click', (e) => { if (e.target === lb) closeLightbox(); });
-document.addEventListener('keydown', (e) => {
-  if (!lb.classList.contains('active')) return;
-  if (e.key === 'Escape') closeLightbox();
-  if (e.key === 'ArrowLeft') nav_lb(-1);
-  if (e.key === 'ArrowRight') nav_lb(1);
-});
-
-// =========================================================
 // LEAFLET MAP
 // =========================================================
 window.addEventListener('load', () => {
   if (typeof L === 'undefined') return;
   const property = [40.99220, -5.75100]; // approx Peñasolana Carrascal de Barregas
-  const map = L.map('map', { zoomControl: false, scrollWheelZoom: false, attributionControl: false }).setView(property, 12);
+  const map = L.map('map', { zoomControl: false, scrollWheelZoom: false, attributionControl: true }).setView(property, 12);
   L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
-    subdomains: 'abcd', maxZoom: 19
+    subdomains: 'abcd', maxZoom: 19, attribution: '&copy; OpenStreetMap &copy; CARTO'
   }).addTo(map);
   L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png', {
-    subdomains: 'abcd', maxZoom: 19
+    subdomains: 'abcd', maxZoom: 19, attribution: '&copy; OpenStreetMap &copy; CARTO'
   }).addTo(map);
 
   // markers
@@ -2372,35 +2169,6 @@ window.addEventListener('load', () => {
 });
 
 // =========================================================
-// CONTACT FORM
-// =========================================================
-document.getElementById('submitBtn').addEventListener('click', () => {
-  const fields = ['f-name', 'f-email', 'f-msg'].map(id => document.getElementById(id));
-  let valid = true;
-  fields.forEach(f => {
-    if (!f.value.trim()) { f.style.borderBottomColor = 'var(--rust)'; valid = false; }
-    else f.style.borderBottomColor = '';
-  });
-  const note = document.getElementById('formNote');
-  if (!valid) {
-    note.textContent = 'Por favor, complete los campos marcados.';
-    note.classList.add('error'); note.style.display = 'block';
-    return;
-  }
-  note.classList.remove('error');
-  document.querySelectorAll('.contact-form input, .contact-form textarea, .contact-form select').forEach(i => {
-    i.disabled = true; i.style.opacity = '0.5';
-  });
-  const btn = document.getElementById('submitBtn');
-  btn.textContent = 'Solicitud Enviada';
-  btn.disabled = true;
-  btn.style.background = 'var(--sage)';
-  btn.style.borderColor = 'var(--sage)';
-  note.textContent = 'Solicitud recibida. Le contactaremos en menos de 24 horas.';
-  note.style.display = 'block';
-});
-
-// =========================================================
 // SMOOTH ANCHOR SCROLL
 // =========================================================
 document.querySelectorAll('a[href^="#"]').forEach(a => {
@@ -2409,17 +2177,15 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     if (target) {
       e.preventDefault();
       if (smoothEnabled) {
-        scrollTarget = target.offsetTop;
-        if (!isSmoothScrolling) { isSmoothScrolling = true; requestAnimationFrame(smoothLoop); }
-      } else {
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else {
+        target.scrollIntoView({ behavior: 'auto', block: 'start' });
       }
     }
   });
 });
 
-// energy row tag (active row visualization)
-document.querySelector('.energy-row.e')?.classList.add('active');
+
 </script>
 </body>
 </html>
