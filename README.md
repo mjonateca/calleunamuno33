@@ -1,9 +1,8 @@
 # Finca Unamuno 33
 
-Dos versiones de la web de la vivienda de Calle Unamuno 33, Peñasolana, Carrascal de Barregas, Salamanca. Ambas sin precio, valoraciones ni referencias económicas en su contenido o metadatos.
+Web de la vivienda de Calle Unamuno 33, Peñasolana, Carrascal de Barregas, Salamanca. Se conserva exclusivamente el diseño editorial original.
 
-- `/`: versión editorial original actualizada, con portada panorámica, paleta pergamino/bronce y Fraunces/Inter.
-- `/v2`: nueva versión cálida, con composición asimétrica, fotografía en arco, blanco cálido, terracota y verde oliva. Tipografía Cormorant Garamond/DM Sans.
+- `/`: versión editorial original, con portada panorámica, paleta pergamino/bronce y Fraunces/Inter.
 
 HTML, CSS y JavaScript sin dependencias de compilación. La configuración existente de Vercel sirve los archivos estáticos. Repositorio: `mjonateca/calleunamuno33`, proyecto Vercel: `calleunamuno33`.
 
