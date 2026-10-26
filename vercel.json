@@ -36,8 +36,18 @@
   ],
   "redirects": [
     {
+      "source": "/v2",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/v2/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/calma",
-      "destination": "/v2",
+      "destination": "/",
       "permanent": true
     }
   ]
