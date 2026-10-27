@@ -1308,6 +1308,10 @@ html{scroll-padding-top:100px} body,a,button,.clickable{cursor:auto!important}.c
 .location-grid{grid-template-columns:minmax(0,1fr) minmax(0,1.2fr)}.location-grid>*{min-width:0}.map-wrap{width:100%;aspect-ratio:auto;height:100%;min-height:500px}#map{position:absolute;inset:0}.map-overlay-card{max-width:calc(100% - 3rem)}@media(max-width:900px){.location-grid{grid-template-columns:minmax(0,1fr)}.map-wrap{height:500px}}html{overflow-x:clip}
 @media(max-width:600px){.hero-bottom{display:block}.hero-scroll{display:none}.hero-content{padding:7.5rem 1.5rem 3rem}.hero-tagline{width:100%;font-size:clamp(2rem,8.5vw,3rem)}.hero-loc{flex-wrap:wrap;gap:.6rem;font-size:.5rem;letter-spacing:.15em}.hero-loc span{flex-shrink:0}}
 </style><script src="/gallery.js" defer></script>
+<style>
+.javier-options{display:grid;gap:1rem;margin-top:1.5rem}.javier-option{display:flex;flex-direction:column;gap:.65rem;padding:1.4rem;border:1px solid var(--bronze);color:var(--ink);text-decoration:none;transition:background .2s,border-color .2s}.javier-option:hover{background:var(--paper-soft);border-color:var(--bronze-deep)}.javier-option:focus-visible{outline:2px solid var(--rust);outline-offset:4px}.javier-option-label{display:flex;justify-content:space-between;gap:1rem;font-family:var(--serif);font-size:1.35rem}.javier-option-detail{font-size:.9rem;line-height:1.6;overflow-wrap:anywhere;letter-spacing:normal}.footer-col a[href^="mailto:"]{overflow-wrap:anywhere}.contact-grid>*{min-width:0}
+@media(max-width:600px){.javier-option{padding:1rem}.javier-option-detail{font-size:.82rem}.sticky-bar .visit-btn{padding:.65rem 1rem}.nav-cta{letter-spacing:.12em}}
+</style>
 </head>
 <body>
 
@@ -1341,7 +1345,7 @@ html{scroll-padding-top:100px} body,a,button,.clickable{cursor:auto!important}.c
     <li><a href="#ficha">Ficha</a></li>
   </ul>
   <div class="nav-right">
-    <a href="#contacto" class="nav-cta">Solicitar Visita</a>
+    <a href="#contacto" class="nav-cta">Más información</a>
   </div>
 </nav>
 
@@ -1358,11 +1362,11 @@ html{scroll-padding-top:100px} body,a,button,.clickable{cursor:auto!important}.c
   <a href="#ficha" data-section="ficha"><span>Ficha</span></a>
   
   <a href="#proceso" data-section="proceso"><span>Proceso</span></a>
-  <a href="#contacto" data-section="contacto"><span>Contacto</span></a>
+  <a href="#contacto" data-section="contacto"><span>Más información</span></a>
 </aside>
 
 <!-- =================== STICKY VISIT BAR =================== -->
-<div class="sticky-bar" id="stickyBar"><div class="price">Unamuno 33<small>Visita privada</small></div><a href="#contacto" class="visit-btn">Agendar</a>
+<div class="sticky-bar" id="stickyBar"><div class="price">Unamuno 33<small>Contacto: Javier</small></div><a href="#contacto" class="visit-btn">Más información</a>
 </div>
 
 <!-- =================== HERO =================== -->
@@ -1823,7 +1827,7 @@ html{scroll-padding-top:100px} body,a,button,.clickable{cursor:auto!important}.c
       </div>
     </div>
 
-    <div class="energy-band reveal"><div><h3>Documentación de la vivienda</h3><p>Solicita a la agencia el certificado energético y la documentación actualizada de la propiedad.</p></div></div>
+    <div class="energy-band reveal"><div><h3>Documentación de la vivienda</h3><p>Solicita a Javier el certificado energético y la documentación actualizada de la propiedad.</p></div></div>
   </div>
 </section>
 
@@ -1842,12 +1846,12 @@ html{scroll-padding-top:100px} body,a,button,.clickable{cursor:auto!important}.c
       <div class="process-step active">
         <div class="process-num">i</div>
         <h4>Solicitud de <em>Visita</em></h4>
-        <p>Contacta con la agencia y acuerda una fecha para conocer la finca.</p>
+        <p>Contacta con Javier por correo o por teléfono y acuerda una fecha para conocer la finca.</p>
       </div>
       <div class="process-step">
         <div class="process-num">ii</div>
         <h4>Visita <em>Privada</em></h4>
-        <p>Recorrido completo de la finca con la agencia. Documentación entregada en mano. Sin presiones.</p>
+        <p>Conoce los espacios de la finca y consulta con Javier la documentación disponible.</p>
       </div>
       <div class="process-step">
         <div class="process-num">iii</div>
@@ -1871,33 +1875,20 @@ html{scroll-padding-top:100px} body,a,button,.clickable{cursor:auto!important}.c
   <div class="container">
     <div class="contact-grid">
       <div class="contact-info reveal">
-        <div class="eyebrow"><span class="eyebrow-num">xv.</span> &nbsp; Contacto</div>
-        <h3 class="h-section">Cada visita es <em>privada</em><br>y concertada con antelación.</h3>
-        <p class="lede">Si esta residencia despierta su interés, nos encantaría mostrársela en persona. Le rogamos solicitar una visita con al menos veinticuatro horas de antelación.</p>
-
-        <div class="contact-line">
-          <span class="lbl">Dirección</span>
-          <span class="val">Calle Unamuno 33<br>Peñasolana, Carrascal de Barregas <em>—</em> Salamanca</span>
-        </div>
-        <div class="contact-line">
-          <span class="lbl">Comercializa</span>
-          <span class="val">Premiere Inmobiliaria <em>— Salamanca</em></span>
-        </div>
-        <div class="contact-line">
-          <span class="lbl">Referencia</span>
-          <span class="val">N.º 106036330</span>
-        </div>
-        <div class="contact-line">
-          <span class="lbl">Información y visitas</span>
-          <span class="val"><a href="https://premiereinmo.com/contacto/" target="_blank" rel="noopener">Contactar con la agencia &nbsp;↗</a></span>
+        <div class="eyebrow"><span class="eyebrow-num">xv.</span> &nbsp; Más información</div>
+        <h3 class="h-section">Más <em>información</em>.</h3>
+        <p class="lede">Si quieres conocer más detalles de la propiedad o concertar una visita, contacta directamente con Javier por correo o por teléfono.</p>
+        <div class="contact-line"><span class="lbl">Dirección</span><span class="val">Calle Unamuno 33<br>Peñasolana, Carrascal de Barregas <em>—</em> Salamanca</span></div>
+        <div class="contact-line"><span class="lbl">Contacto</span><span class="val">Javier</span></div>
+      </div>
+      <div class="contact-form reveal">
+        <h3>Habla con <em>Javier</em></h3>
+        <p class="form-intro">Elige cómo prefieres contactar.</p>
+        <div class="javier-options">
+          <a class="javier-option" href="mailto:javiergarridonovoa@gmail.com"><span class="javier-option-label">Por correo <span aria-hidden="true">↗</span></span><span class="javier-option-detail">javiergarridonovoa@gmail.com</span></a>
+          <a class="javier-option" href="tel:+34625066889"><span class="javier-option-label">Por teléfono <span aria-hidden="true">↗</span></span><span class="javier-option-detail">+34 625 066 889</span></a>
         </div>
       </div>
-
-      <div class="contact-form reveal">
-<h3>Ven a <em>conocerla</em></h3><p class="form-intro">Concierta una visita directamente con Premiere Inmobiliaria a través de su página de contacto.</p>
-<a class="btn btn-solid" href="https://premiereinmo.com/contacto/" target="_blank" rel="noopener">Contactar con la agencia ↗</a>
-<p style="margin-top:2rem">También puedes empezar con un recorrido por las fotografías de la vivienda, el jardín y la piscina.</p>
-<a class="btn btn-ghost" style="margin-top:1rem" href="#galeria">Ver las fotografías ↗</a></div>
     </div>
   </div>
 </section>
@@ -1920,10 +1911,9 @@ html{scroll-padding-top:100px} body,a,button,.clickable{cursor:auto!important}.c
         <p><a href="#proceso">Proceso de Compra</a></p>
       </div>
       <div class="footer-col">
-        <h5>Comercializa</h5>
-        <p>Premiere Inmobiliaria — Salamanca</p>
-        <p style="margin-top: 1rem;"><a href="https://premiereinmo.com/contacto/" target="_blank" rel="noopener">Contactar con la agencia ↗</a></p>
-        <p style="margin-top: 0.5rem;"><a href="https://www.idealista.com/pro/premiere-inmobiliaria/" target="_blank" rel="noopener">Ficha de la agencia ↗</a></p>
+        <h5>Más información</h5><p>Javier</p>
+        <p style="margin-top: 1rem;"><a href="mailto:javiergarridonovoa@gmail.com">Por correo: javiergarridonovoa@gmail.com</a></p>
+        <p style="margin-top: 0.5rem;"><a href="tel:+34625066889">Por teléfono: +34 625 066 889</a></p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -2013,10 +2003,13 @@ const statsSection = document.getElementById('cifras');
 const cineSection = document.querySelector('.cinematic');
 const indexLinks = indexBar.querySelectorAll('a');
 const sections = Array.from(indexLinks).map(a => document.querySelector(a.getAttribute('href')));
+const contactSection = document.getElementById('contacto');
 
 function onScroll() {
   const y = window.scrollY;
   const docH = document.body.scrollHeight - window.innerHeight;
+  const contactRect = contactSection?.getBoundingClientRect();
+  const contactVisible = contactRect && contactRect.top < window.innerHeight && contactRect.bottom > 0;
 
   // nav state
   nav.classList.toggle('scrolled', y > 60);
@@ -2030,13 +2023,13 @@ function onScroll() {
 
   // index visibility (after hero)
   if (heroEl) {
-    indexBar.classList.toggle('visible', y > window.innerHeight * 0.8);
+    indexBar.classList.toggle('visible', y > window.innerHeight * 0.8 && !contactVisible);
   }
 
   // sticky visit bar (after stats section)
   if (statsSection) {
     const triggerY = statsSection.offsetTop + statsSection.offsetHeight;
-    stickyBar.classList.toggle('visible', y > triggerY);
+    stickyBar.classList.toggle('visible', y > triggerY && !contactVisible);
   }
 
   // hero parallax

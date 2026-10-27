@@ -16,16 +16,16 @@ La galería compartida ofrece filtros, ampliación con diálogo nativo, teclado 
 
 ## Contacto y contenido
 
-Las visitas enlazan con la página oficial de contacto de Premiere Inmobiliaria: https://premiereinmo.com/contacto/. No se almacenan datos personales ni se simula un envío de formulario.
+La sección «Más información» ofrece contacto directo con Javier: correo `javiergarridonovoa@gmail.com` (enlace mailto) y teléfono `+34625066889` (enlace tel). Los accesos de la cabecera, barra flotante y pie de página utilizan este contacto. No se almacenan datos de visitantes ni se simula un envío de formulario.
 
 Se ha retirado el enlace Matterport antiguo porque el proveedor devolvía «Model not found (404)». Se ha sustituido por un recorrido fotográfico. Para restaurar un tour se necesita la URL de un modelo activo.
 
-Los datos físicos de la vivienda proceden de la ficha de la web anterior. La documentación y superficies deben confirmarse con la agencia. La nueva versión no incorpora estimaciones de mercado, licencias, rendimientos ni garantías.
+Los datos físicos de la vivienda proceden de la ficha de la web anterior. La documentación y superficies deben confirmarse con Javier. La nueva versión no incorpora estimaciones de mercado, licencias, rendimientos ni garantías.
 
 ## Verificación
 
-`python checks.py` valida ambas páginas: ausencia de importes, referencias al tour retirado y formularios ficticios; un H1 por página, IDs únicos, destinos de anclas, 22 fotos y existencia de imágenes y recursos. Comprueba también la sintaxis de los scripts inline con Node. `node --check gallery.js` revisa el script compartido.
+`python checks.py` valida la V1: ausencia de importes, referencias al tour retirado y formularios ficticios; un H1, IDs únicos, destinos de anclas, 22 fotos y existencia de imágenes y recursos. Comprueba los enlaces de correo y teléfono de Javier, la ausencia de enlaces a la agencia y la sintaxis de los scripts inline con Node. `node --check gallery.js` revisa la galería.
 
-Previsualización: `python -m http.server 8765 --bind 127.0.0.1`. Abrir `/` y `/v2/`. Comprobar escritorio, móvil, filtros, ampliación, navegación y contacto antes de publicar.
+Previsualización: `python -m http.server 8765 --bind 127.0.0.1`. Abrir `/`. Comprobar escritorio, móvil, filtros, ampliación, navegación y contacto antes de publicar.
 
-Un selector fijo en la parte superior permite alternar entre V1 (original mejorada) y V2 (Calma), también en móvil. La dirección anterior `/calma` redirige a `/v2`.
+Se conserva solo la V1. Las direcciones retiradas `/v2` y `/calma` redirigen a la página principal; no hay selector de versiones.

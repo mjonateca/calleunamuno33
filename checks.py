@@ -23,8 +23,10 @@ results=[]
 manifest=json.loads((root/'photos.json').read_text(encoding='utf-8'))
 assert len(manifest)==22 and all(p['width']>600 for p in manifest)
 allowed_photos={p['id'] for p in manifest}
-for file in ['index.html','v2/index.html']:
+for file in ['index.html']:
     s=(root/file).read_text(encoding='utf-8');p=Page();p.feed(s)
+    assert 'href="mailto:javiergarridonovoa@gmail.com"' in s and 'href="tel:+34625066889"' in s
+    assert not re.search(r'premiereinmo|Premiere|agencia|version-switch|href="/v2"',s)
     assert not re.search(r'750[.,]?000|€|1\.332|425\.000|640\.000|ZKW4kUeZWbb|Solicitud Enviada|\{\{',s),f'Forbidden old content: {file}'
     assert p.h1==1,f'H1 count {file}: {p.h1}'
     assert len(p.ids)==len(set(p.ids)),f'Duplicate IDs: {file}'
